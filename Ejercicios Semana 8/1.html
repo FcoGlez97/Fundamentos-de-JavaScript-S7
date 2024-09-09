@@ -8,8 +8,21 @@
 <body>
 <script>
     //Ejercicio 1:Escribe un programa que pida dos números y escriba en la pantalla cuál es el mayor.
+    function esMayor (num1, num2) {
+        if (num1 > num2) {
+            alert("El número " + num1 + " es mayor que " + num2);
+        } else if (num2 > num1) {
+            alert("El número " + num2 + " es mayor que " + num1);
+        }else{
+            alert("Ambos números son iguales.");
+        }
+    }
 
-    
+    var primerNumero = prompt("Introduce el primer número: ");
+    var segundoNumero = prompt("Introduce el segundo número: ");
+
+    esMayor(Number(primerNumero),Number(segundoNumero));
+
 </script>
 </body>
 </html>

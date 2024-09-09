@@ -8,7 +8,17 @@
 <body>
     <script>
         //Ejercicio 3: Escribe un programa que pida un número y diga si es divisible entre 2.
-        
+        function esDiv2(numero) {
+            if (numero % 2 === 0) {
+                alert("El número " + numero + " si es divisible entre 2.");
+            } else {
+                alert("El número " + numero + " no es divisible entre 2.");
+            }
+        }
+
+        var numero = prompt("Introduce un número: ");
+
+        esDiv2(Number(numero));
     </script>
 </body>
 </html>

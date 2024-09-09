@@ -8,8 +8,21 @@
 <body>
     <script>
         //Ejercicio 4: Escribe un programa que pida una frase y escriba cuantas veces aparece la letra a.
+        function esContar(frase) {
+            var cont = 0;
 
-        
+            for (var i = 0; i < frase.length; i++) {
+                if (frase[i].toLowerCase() === 'a') {
+                    cont++;
+                }
+            }
+
+            alert("La letra a aparece " + cont + " veces en la frase.");
+        }
+
+        var fraseUs = prompt("Introduce una frase: ");
+
+        esContar(fraseUs);
     </script>
 </body>
 </html>

@@ -8,7 +8,24 @@
 <body>
     <script>
         //Ejercicio 2: Escribe un programa que pida 3 números y escriba en la pantalla el mayor de los tres.
+        function compararNumeros(n1,n2,n3){
+            if (n1 > n2 && n1 > n3){
+                alert("El número " + n1 + " es el mayor de los tres.");
+            }else if (n2 > n1 && n2 > n3){
+                alert("El número " + n2 + " es el mayor de los tres");
+            }else if (n3 > n1 && n3 > n2){
+                alert("El número " + n3 + " es el mayor de los tres");
+            }else{
+                alert("Algunos de los números son iguales.");
+            }
+        }
 
+        var primerNumero = prompt("Introduce el primer número: ");
+        var segundoNumero = prompt("Introduce el segundo número: ");
+        var tercerNumero = prompt("Introduce el tercer número: ");
+
+        compararNumeros(Number(primerNumero),Number(segundoNumero),Number(tercerNumero));
+            
         
     </script>
 </body>

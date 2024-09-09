@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <script>
+        //Ejercicio 5: Escribe un programa que pida una frase y escriba las vocales que aparecen en ella.
+        function escribeVocales(frase) {
+            var vocales = "";
+            var buscaVocales = ["a", "e", "i", "o", "u", "á", "é", "í", "ó", "ú"];
+
+            for (var i = 0; i < frase.length; i++) {
+                var letra = frase[i].toLowerCase(); 
+                if (buscaVocales.includes(letra)) { 
+                    vocales += letra + " "; 
+                }
+            }
+
+            if (vocales) {
+                alert("Las vocales detectadas son: " + vocales);
+            } else {
+                alert("No se detectaron vocales en la frase.");
+            }
+        }
+
+        var fraseUs = prompt("Escribe una frase: ");
+
+        escribeVocales(fraseUs);
+        
+    </script>
+</body>
+</html>

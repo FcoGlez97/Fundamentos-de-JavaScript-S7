@@ -8,7 +8,23 @@
 <body>
     <script>
         //Ejercicio Bonus: Escribe un programa que pida una frase y escriba cuántas de las letras que tiene son vocales.
+        function contarVocales(frase) {
+            var vocales = "aeiou"; 
+            var cont = 0;
 
+            for (var i = 0; i < frase.length; i++) {
+                var letra = frase[i].toLowerCase();
+                if (vocales.includes(letra)) { 
+                    cont++;
+                }
+            }
+
+            alert("En la frase, hay " + cont + " vocales.");
+        }
+
+        var fraseUs = prompt("Introduce una frase: ");
+
+        contarVocales(fraseUs);
         
     </script>
 </body>
