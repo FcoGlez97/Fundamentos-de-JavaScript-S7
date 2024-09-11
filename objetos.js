@@ -5,11 +5,11 @@
 
 //Objeto persona con propiedades
 
-let persona{
+let persona = {
     nombre: 'Francisco',
     apellido: 'Gonzalez',
     edad: 27,
-    estudios: ['TSU','Maestría'],
+    estudios: ['TSU','Licenciatura'],
     hijos: false
 }
 
